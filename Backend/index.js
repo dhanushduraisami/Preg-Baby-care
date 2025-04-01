@@ -6,7 +6,6 @@ const path = require('path');
 
 
 app.get('/', (req, res) => {
-   const userId = req.params.id;
    res.sendFile(path.join(__dirname,'index.html'));
 });
 
