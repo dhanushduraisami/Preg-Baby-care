@@ -1,0 +1,163 @@
+/* Calendar Container Styles */
+.calendar-container {
+  --glow-color: rgba(147, 51, 234, 0.35);
+  --purple-primary: #9333ea;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* Calendar Header Styling */
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc .fc-toolbar-title {
+  color: var(--purple-primary);
+  font-size: 1.75rem !important;
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+/* Navigation Buttons */
+.fc .fc-prev-button,
+.fc .fc-next-button {
+  background-color: #f3e8ff !important;
+  border: none !important;
+  color: var(--purple-primary) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.fc .fc-prev-button:hover,
+.fc .fc-next-button:hover {
+  background-color: #e9d5ff !important;
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Remove all borders and grid lines */
+.fc {
+  border: none !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid,
+.fc td,
+.fc th,
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+
+.fc .fc-scrollgrid {
+  border: none !important;
+}
+
+/* Clean date cell styling */
+.fc .fc-daygrid-day {
+  padding: 6px !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  padding: 0 !important;
+  min-height: 60px !important;
+}
+
+.fc .fc-daygrid-day-top {
+  justify-content: center !important;
+  padding-top: 4px !important;
+}
+
+/* Circular date styling */
+.fc .fc-daygrid-day-number {
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin: 2px auto !important;
+  font-size: 0.9rem !important;
+  color: #4a5568 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Hover effect */
+.fc .fc-daygrid-day-number:hover {
+  background-color: rgba(147, 51, 234, 0.1) !important;
+  box-shadow: 0 0 15px var(--glow-color);
+  transform: scale(1.1);
+}
+
+/* Today's date */
+.fc .fc-day-today .fc-daygrid-day-number {
+  background-color: var(--purple-primary) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Weekend dates */
+.fc .fc-day-sat .fc-daygrid-day-number,
+.fc .fc-day-sun .fc-daygrid-day-number {
+  color: var(--purple-primary) !important;
+}
+
+/* Day names (Mon, Tue, etc.) */
+.fc-theme-standard th {
+  padding: 10px 0 !important;
+  font-weight: 600 !important;
+  color: #6b7280 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  background: transparent !important;
+}
+
+/* Events styling */
+.fc-event {
+  margin: 2px 4px !important;
+  padding: 2px 6px !important;
+  background: var(--purple-primary) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-size: 0.8rem !important;
+  cursor: pointer !important;
+}
+
+.fc-event:hover {
+  transform: scale(1.02);
+}
+
+/* Calendar title */
+.calendar-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.calendar-header h1 {
+  color: var(--purple-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Add more spacing between weeks */
+.fc .fc-daygrid-body tr {
+  height: 80px !important;
+}
+
+/* Remove the highlight effect when selecting dates */
+.fc-highlight,
+.fc .fc-highlight {
+  background: transparent !important;
+} 
